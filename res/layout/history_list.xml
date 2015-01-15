@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mainListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+         android:layout_weight="0.7" >
+    </ListView>
+
+    <LinearLayout
+        
+        android:id="@+id/history_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+       
+          android:layout_weight="0.1"
+       
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+           
+            android:layout_weight="0.5"
+            android:onClick="GetoutIntent"
+            android:text="צא" />
+
+        <Button
+            android:id="@+id/aprrove"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:onClick="ReScanIntent"
+            android:text="סריקה מחדש" />
+    </LinearLayout>
+
+</LinearLayout>
